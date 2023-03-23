@@ -3,10 +3,10 @@
 // Schrijf een script dat voor iedere student in de array de score (het getal uit de property "score") in de terminal print
 
 const scores = [
-    {name: 'Max', score: 83, grade: null},
-    {name: 'David', score: 77, grade: null},
-    {name: 'Khalid', score: 92, grade: null},
-    {name: 'Rianne', score: 66, grade: null}
+    {name: 'Max Verstappen', score: 83, grade: null},
+    {name: 'David Coulthard', score: 77, grade: null},
+    {name: 'Kalid', score: 92, grade: null},
+    {name: 'Ryianne', score: 66, grade: null}
 ];
 console.log(scores[0].score)
 console.log(scores[1].score)
@@ -146,6 +146,25 @@ const students = [
     {name: 'Aicha', city: 'Utrecht', zipCode: '3514', neighborhood: null},
     {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
 ];
+
+for (let i = 0; i < students.length; i++) {
+    if (students[i].zipCode === "3513")
+        students[i].neighborhood = "Pijlsweerd";
+    else if (students[i].zipCode === "3514")
+        students[i].neighborhood = "Vogelenbuurt";
+    else if (students[i].zipCode === "3512")
+        students[i].neighborhood = "Binnenstad";
+    else if (students[i].zipCode === "3531")
+        students[i].neighborhood = "Lombok";
+    else if (students[i].zipCode === "3572")
+        students[i].neighborhood = "Wittevrouwen";
+    else if (students[i].zipCode === "3581")
+        students[i].neighborhood = "Oudwijk";
+    else if (students[i].zipCode === "3583")
+        students[i].neighborhood = "Schildersbuurt";
+}
+console.log(students);
+
 
 // Verwachte uitkomsten:
 // [

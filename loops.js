@@ -94,7 +94,7 @@ if (i > 6)
 // Fizz
 // 22
 // 23
-// Fizz
+// FizZZz
 // Buzz
 // 26
 // Fizz
