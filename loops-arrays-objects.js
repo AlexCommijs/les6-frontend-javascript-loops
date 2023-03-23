@@ -147,6 +147,25 @@ const students = [
     {name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: null},
 ];
 
+for (let i = 0; i < students.length; i++) {
+    if (students[i].zipCode === "3513")
+        students[i].neighborhood = "Pijlsweerd";
+    else if (students[i].zipCode === "3514")
+        students[i].neighborhood = "Vogelenbuurt";
+    else if (students[i].zipCode === "3512")
+        students[i].neighborhood = "Binnenstad";
+    else if (students[i].zipCode === "3531")
+        students[i].neighborhood = "Lombok";
+    else if (students[i].zipCode === "3572")
+        students[i].neighborhood = "Wittevrouwen";
+    else if (students[i].zipCode === "3581")
+        students[i].neighborhood = "Oudwijk";
+    else if (students[i].zipCode === "3583")
+        students[i].neighborhood = "Schildersbuurt";
+}
+console.log(students);
+
+
 // Verwachte uitkomsten:
 // [
 //     { name: 'Mariska', city: 'Utrecht', zipCode: '3513', neighborhood: 'Pijlsweerd' },
