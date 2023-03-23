@@ -59,7 +59,7 @@ for (let i = 0; i < squares.length; i++) {
 console.log(squares);
 
 // Verwachtte uitkomsten:
-// Vóór het script zie je de originele waardes:
+// Vóór het script zag je de originele waardes:
 // console.log(squares) geeft: [30, 2, 8, 24, 11];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(squares) geeft:
