@@ -8,6 +8,12 @@ const scores = [
     {name: 'Khalid', score: 92, grade: null},
     {name: 'Rianne', score: 66, grade: null}
 ];
+console.log(scores[0].score)
+console.log(scores[1].score)
+console.log(scores[2].score)
+console.log(scores[3].score)
+
+
 
 // Verwachtte uitkomsten:
 // 83
@@ -17,23 +23,32 @@ const scores = [
 // ==========================================
 
 
-
-
-
 // ==========================================
 // Opdracht 1b
 // Breid je script uit door voor iedere student de score om te rekenen naar een letter en dit in de terminal te printen
 // < 60 = F, < 70 = D, <80 = C, <90 B, <100 = A
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
+
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i].score < 60)
+        console.log(scores[i].grade = "F");
+    else if ((scores[i].score > 59) && (scores[i].score <70))
+        console.log(scores[i].grade = "D");
+    else if ((scores[i].score > 69) && (scores[i].score <80))
+        console.log(scores[i].grade = "C");
+    else if ((scores[i].score > 79) && (scores[i].score <90))
+        console.log(scores[i].grade = "B");
+    else if ((scores[i].score > 89) && (scores[i].score <100))
+        console.log(scores[i].grade = "A");
+
+}
+
 // Verwachtte uitkomsten:
 // B
 // C
 // A
 // D
 // ==========================================
-
-
-
 
 
 // ==========================================
@@ -50,7 +65,20 @@ const scores = [
 // ==========================================
 
 
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i].score < 60)
+        scores[i].grade = "F";
+    else if ((scores[i].score > 59) && (scores[i].score <70))
+        scores[i].grade = "D";
+    else if ((scores[i].score > 69) && (scores[i].score <80))
+        scores[i].grade = "C";
+    else if ((scores[i].score > 79) && (scores[i].score <90))
+        scores[i].grade = "B";
+    else if ((scores[i].score > 89) && (scores[i].score <100))
+        scores[i].grade = "A";
 
+}
+console.log(scores);
 
 
 // ==========================================
@@ -64,6 +92,12 @@ const NOVIEmployees = [
     {firstName: 'Mark', lastName: 'Rensen'},
 ];
 
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    NOVIEmployees[i].email = NOVIEmployees[i].firstName + "." + NOVIEmployees[i].lastName + "@novi.nl";
+
+}
+console.log(NOVIEmployees);
+
 // Bij NOVI horen de e-mailadressen altijd in het volgende format: voornaam.achternaam@novi.nl
 // Vóór het script zie je de originele objecten,
 // Na jouw script zie je de aangepaste objecten:
@@ -75,15 +109,14 @@ const NOVIEmployees = [
 //  ];
 // ==========================================
 
-
-
-
-
-
 // Opdracht 2-BONUS
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
 
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    NOVIEmployees[i].email = NOVIEmployees[i].email.toLowerCase()
+}
+console.log(NOVIEmployees);
 
 
 
@@ -130,6 +163,4 @@ const students = [
 //     { name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: 'Vogelenbuurt' }
 // ]
 // ==========================================
-
-
 
